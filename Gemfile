@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby ‘2.0.0’
+ruby '2.0.0'
 
 gem 'responders'
 gem 'sprockets', '2.12.3'
@@ -60,10 +60,8 @@ group :development, :test do
 end
 
 group :production do 
-
-gem 'rails_12factor'
-
-gem 'thin'
+  gem 'rails_12factor'
+  gem 'thin'
 
 end
 

@@ -1,1 +1,1 @@
-add bundle exec thin start
+bundle exec thin start
