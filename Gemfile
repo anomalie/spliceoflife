@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby ‘2.0.0’
 
 gem 'responders'
 gem 'sprockets', '2.12.3'
@@ -57,4 +58,13 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+group :production do 
+
+gem 'rails_12factor'
+
+gem 'thin'
+
+end
+
 

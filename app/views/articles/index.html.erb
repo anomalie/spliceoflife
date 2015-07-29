@@ -30,14 +30,14 @@
 
         <div class="card">
           <div class="card__container card__container--closed">
-            <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+            <svg class="card__image" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
               <defs>
                 <clipPath id="clipPath1">
                   <circle class="clip" cx="960" cy="250" r="992"></circle>
                 </clipPath>
               </defs>
-              <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/a.jpg"></image>
-              
+              <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="board.jpg"></image>
+  
             </svg>
             <%= image_tag a.picture.url if a.picture? %>
             <div class="card__content">
@@ -54,8 +54,8 @@
                 </div>
                   <p>  
                       
-      
-                  <%= a.body %></p>
+                  <%= a.body %>
+                  </p>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@
 <!-- 2nd CARD REMOVE -->
 
    <!--      <div class="card">
-          <div class="card__container card__container--closed">
+          <div class="card__container card__container-closed">
             <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
               <defs>
                 <clipPath id="clipPath2">
