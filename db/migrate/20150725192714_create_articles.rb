@@ -5,7 +5,7 @@ class CreateArticles < ActiveRecord::Migration
       t.string :body
       t.string :picture
       t.string :audio
-      t.reference :user
+      t.references :user
 
       t.timestamps null: false
     end

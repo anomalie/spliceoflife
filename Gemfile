@@ -11,6 +11,9 @@ gem 'google-webfonts-rails'
 gem 'soundcloud'
 gem 'masonry-rails'
 gem 'figaro'
+gem 'carrierwave','0.10.0'
+gem 'mini_magick','3.8.0'
+gem 'fog','1.23.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
