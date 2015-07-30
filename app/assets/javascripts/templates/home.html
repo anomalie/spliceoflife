@@ -1,0 +1,62 @@
+<head>
+  <script>
+  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+    var root = document.getElementsByTagName('html')[0];
+    root.setAttribute('class', 'ff');
+  };
+  </script>
+</head>
+
+<body class="demo-1" ng-controller= "mainController as mainCtrl">
+  <div class="container">
+    <header class="codrops-header">
+      <h1>SPLICE OF LIFE<span>Studio Stories HOME</span></h1>
+    </header>
+    <div class="content">
+      <!-- trianglify pattern container -->
+      <div class="pattern pattern--hidden"></div>
+      <!-- cards -->
+      <div class="wrapper">
+
+  
+
+        <div class="card" ng-repeat="articles in mainCtrl.articles">
+          <div class="card__container card__container--closed">
+            <svg class="card__image" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <clipPath id="clipPath1">
+                  <circle class="clip" cx="960" cy="250" r="992"></circle>
+                </clipPath>
+              </defs>
+              <image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="board.jpg"></image>
+               
+            </svg>
+           
+            <div class="card__content">
+              <i class="card__btn-close fa fa-times"></i>
+              <div class="card__caption">
+                <h2 class="card__title">   <%= a.title %> </h2>
+                <p class="card__subtitle">Title</p>
+              </div>
+              <div class="card__copy">
+                <div class="meta">
+              
+                  <span class="meta__author">Author</span>
+                  <span class="meta__date">Date Created</span>
+                </div>
+                  <p>  
+                      
+                  <%= a.body %>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
